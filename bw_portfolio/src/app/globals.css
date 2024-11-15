@@ -2,20 +2,94 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Animation */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: #F8F5F0;
+  transition-property: opacity, background-color, transform, filter;
+  transition-timing-function: ease-in-out;
+  transition-duration: 500ms;
+}
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateY(40px);
+  filter: blur(12px);
+}
+
+
+
+.firstPage {
+ 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nameplace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%; /* Adjust the width as needed */
+  height: 100vh;
+  border: none; /* Remove the border */
+}
+
+/* 2. HEADING STYLES */
+
+.text-shadow{
+  text-shadow: 1px 1px 1px #707070;
+}
+
+.firstPage h1 {
+  margin: 0;
+  color: #F27D00;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.firstPage h1 {
+  font-size: 500%;
+}
+
+.firstPage p {
+  font-size: 150%;
+  color: #F27D00;
+  text-align: center;
+}
+
+/* 3. IMAGES STYLES */
+.firstPage img {
+  width: 30%;
+  height: 100vh;
+}
+
+
+.headshot{
+  border-radius: 20px;
+  box-shadow: 2px 2px 2px #707070;
+}
+
+.about{
+  padding: 5%;
+    display: flex;
+    align-items: center; /* Vertically align the items */
+    justify-content: center; /* Horizontally center the content */
+    gap: 20px; /* Add some space between the image and the paragraph */
+}
+/* 1. PARAGRAPH STYLE */
+.about p {
+    color: #F27D00;
+    font-family: 'GoudyBookLetter', sans-serif;
+    font-size: 2.5rem; /* Adjust the font size as needed */
+    max-width: 50%; /* Limit the paragraph width */
+}
+/* 2. IMAGE STYLE */
+.about Image {
+    margin-left: 20%;
+    margin-right: 10%;
+    border-radius: 29px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25);
 }

@@ -11,8 +11,8 @@ export const FlipNav = () => {
 
 const NavLeft = () => {
     return (
-      <div className="flex items-center gap-6 font-black">
-        <Link href="/">
+      <div className="flex items-center gap-6 text-[#F27D00] text-shadow">
+        <Link href="/starPage">
           <Logo />
         </Link>
         <TransitionLink href="/about">About</TransitionLink>
